@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Redirecter Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+        }
+
+        #qr-code {
+            margin-top: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Platform Redirecter</h1>
+    <h2>Redirecting to the best link for your device...</h2>
+
+    <div id="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://Attempt3035.github.io/platform-redirecter/" alt="QR Code">
+    </div>
+
+    <div class="button-container">
+        <button onclick="window.location.href='https://brave.com/download/'">Android URL</button>
+        <button onclick="window.location.href='https://www.apple.com/safari/'">iOS URL</button>
+        <button onclick="window.location.href='https://duckduckgo.com/app'">macOS URL</button>
+        <button onclick="window.location.href='https://www.mozilla.org/en-US/firefox/linux/'">Linux URL</button>
+        <button onclick="window.location.href='https://www.microsoft.com/en-us/edge/download'">Windows URL</button>
+        <button onclick="window.location.href='https://www.google.com/chrome/'">Fallback URL</button>
+    </div>
+
+    <script src="../redirecter.js"></script>
+    <script>
+        // Redirect automatically on page load
+        window.onload = function () {
+            redirectURL({
+                androidUrl: "market://details?id=com.brave.browser",
+                iosUrl: "itms-apps://itunes.apple.com/au/app/safari/id1146562112",
+                osxUrl: "itms-apps://itunes.apple.com/au/app/duckduckgo-private-browser/id663592361",
+                windowsUrl: "ms-windows-store://pdp/?ProductId=xpfftq037jwmhs",
+                linuxUrl: "https://www.mozilla.org/en-US/firefox/linux/",
+                fallbackUrl: "https://www.google.com/chrome/",
+                replace: true
+            });
+        };
+    </script>
+</body>
+
+</html>
