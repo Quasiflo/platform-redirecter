@@ -2,7 +2,7 @@
 
 A tiny JavaScript utility to automatically redirect users on different platforms to different links. For example, redirecting to the correct app store based on their device! 🚀
 
-### [🚀🚀 TRY IT 🚀🚀](/example/index.html)
+### [🚀🚀 TRY IT 🚀🚀](https://Attempt3035.github.io/platform-redirecter/)
 
 ## ✨ Features
 - 🖥️ Android, iOS, macOS, Windows & Linux
