@@ -2,7 +2,7 @@
 
 A tiny JavaScript utility to automatically redirect users on different platforms to different links. For example, redirecting to the correct app store based on their device! 🚀
 
-### [🚀🚀 TRY IT 🚀🚀](https://Attempt3035.github.io/platform-redirecter/)
+### [🚀🚀 TRY IT 🚀🚀](https://Quasiflo.github.io/platform-redirecter/)
 
 ## ✨ Features
 - 🖥️ Android, iOS, macOS, Windows & Linux
@@ -16,7 +16,7 @@ A tiny JavaScript utility to automatically redirect users on different platforms
 Include the following script tag in your HTML file:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Attempt3035/platform-redirecter@refs/heads/main/redirecter.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Quasiflo/platform-redirecter@refs/heads/main/redirecter.min.js"></script>
 ```
 
 ### 🧰 Manually
